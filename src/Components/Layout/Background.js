@@ -4,7 +4,6 @@ const Background = () =>{
     return <Fragment>
         <div className="stars"></div>
 		<div className="twinkling"></div>
-		<div className="clouds"></div>
 		<div className="purple-overlay"></div>
     </Fragment>
 }

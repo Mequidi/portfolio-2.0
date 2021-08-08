@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;500;800&display=swap');
+
 html {
     --section-background-color: linear-gradient(to bottom left,
             rgba(17, 16, 16, 0.582),
@@ -15,6 +17,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
 /*  

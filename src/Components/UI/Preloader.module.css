@@ -12,6 +12,7 @@
 }
 .preloader-none{
     animation:slow-fade 1500ms linear forwards;
+    display: none;
 }
 
 @keyframes slow-fade{
