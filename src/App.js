@@ -1,5 +1,6 @@
 import { Fragment, useEffect, useState } from 'react';
 import './App.css';
+import Home from './Components/Home/Home';
 import Background from './Components/Layout/Background';
 import Navbar from './Components/Layout/Navbar';
 import Preloader from './Components/UI/Preloader';
@@ -21,6 +22,7 @@ function App() {
 		<Preloader load={load}></Preloader>
 		<Background />
 		<Navbar />
+		<Home />
   	</Fragment>
 }
 
