@@ -1,11 +1,14 @@
-.home1{
+.purple{
+  color:#c770f0;
+}
+
+.home{
     width: 100%;
     height: 90vh;
+	background-color: transparent;
     max-width: 100vw;
-    /* margin-left: 5rem; */
-
 }
-.home1-container{
+.home-container{
     margin: auto;
     width: 95%;
     height: auto;
@@ -13,13 +16,13 @@
     display: flex;
     flex-direction: row;
 }
-.home1-content{
+.home-content{
     flex-basis:50%;
     padding: 3rem 1rem 0 1rem;
     color: #fff;
     font-size: 1.6em;
 }
-.home1-content > *{
+.home-content > *{
     padding-left: 3rem;
     font-weight: normal;
     padding-bottom: 1rem;
@@ -29,14 +32,44 @@
 .main-name{
     color: #c770f0;
 }
-.home1-img-container{
+.home-img-container{
     flex-basis: 50%;
     display: flex;
     justify-content: center;
 }
-.home1-img-container img{
-    width: 70%;
+.home-img-container img{
+    width: 65%;
 }
+
+.about{
+	background-color: rgba(162, 130, 238, 0.048);
+	width: 100%;
+	height: 90vh;
+}
+.about-container{
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	padding: 1.5rem;
+	margin:auto;
+}
+.about-container >*{
+	padding: 8rem 1rem 0 1rem;
+}
+.about-content{
+	color: #fff;
+	flex-basis: 70%;
+	font-size: 20px;
+	padding: 6rem 1rem 0 1rem;
+}
+.about-content h1{
+	font-size: 40px;
+	margin-bottom: 1rem;
+}
+.about-content p{
+	padding-top: 4rem;
+}
+
 .wave {
     animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
     animation-duration: 2.1s; /* Change to speed up or slow down */
