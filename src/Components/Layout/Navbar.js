@@ -4,13 +4,20 @@ import { AiOutlineHome } from 'react-icons/ai'
 import { IoIosPerson } from 'react-icons/io'
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai'
 import { CgFileDocument } from 'react-icons/cg'
-
-
-
-
+import { useState } from "react";
 
 const Navbar = () =>{
-    return <nav className={classes.navbar}>
+
+    const [ hasScrolled,setHasScrolled ] = useState(false)
+
+    document.addEventListener("scroll",()=>{
+        if(window.pageYOffset>20)
+            setHasScrolled(true);
+        else
+            setHasScrolled(false);
+    });
+
+    return <nav className={hasScrolled?`${classes.navbar} ${classes["color-navbar"]}`:classes.navbar}>
         <div className={classes["nav-container"]}>
             <div className={classes["logo-container"]}>
                 <img className={classes.logoimg} src={logoImg} alt="logo"/>

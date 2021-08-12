@@ -134,6 +134,7 @@
 	margin: auto;
 	text-align: center;
 	color: #fff;
+  padding-bottom: 4rem;
 }
 .social-container{
 	padding:4rem 1rem 2rem 1rem;
@@ -165,6 +166,9 @@
   border-radius: 50% ;
   transition: 0.5s ;
   color: #700c86;
+}
+.icon{
+  transform: translateY(2px);
 }
 
 .home-social-icons::before {
