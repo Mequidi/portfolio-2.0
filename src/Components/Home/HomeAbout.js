@@ -50,23 +50,23 @@ const HomeAbout = () =>{
                         <p> Feel free to <span className={classes["purple"]}>connect </span>with me</p>
                         <ul className={classes["social-links"]}>
                             <li className={classes["social-icon"]}>
-                                <a className={classes["home-social-icons"]}>
-                                    <AiFillGithub />
+                                <a href="https://github.com/Mequidi" target="_blank" rel="noreferrer" className={classes["home-social-icons"]}>
+                                    <AiFillGithub className={classes.icon} />
+                                </a>
+                            </li> 
+                            <li className={classes["social-icon"]}>
+                                <a href="https://twitter.com/NikhilSejwal4" target="_blank" rel="noreferrer"  className={classes["home-social-icons"]}>
+                                    <AiOutlineTwitter className={classes.icon} />
                                 </a>
                             </li>
                             <li className={classes["social-icon"]}>
-                                <a className={classes["home-social-icons"]}>
-                                    <AiOutlineTwitter />
+                                <a href="https://www.linkedin.com/in/nikhil-sejwal-320014209/" target="_blank" rel="noreferrer"  className={classes["home-social-icons"]}>
+                                    <FaLinkedinIn className={classes.icon} />
                                 </a>
                             </li>
                             <li className={classes["social-icon"]}>
-                                <a className={classes["home-social-icons"]}>
-                                    <FaLinkedinIn />
-                                </a>
-                            </li>
-                            <li className={classes["social-icon"]}>
-                                <a className={classes["home-social-icons"]}>
-                                    <AiFillInstagram />
+                                <a href="https://www.instagram.com/sejwal_nikhil/" target="_blank" rel="noreferrer"  className={classes["home-social-icons"]}>
+                                    <AiFillInstagram className={classes.icon} />
                                 </a>
                             </li>
                         </ul>
