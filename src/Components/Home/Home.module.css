@@ -154,17 +154,48 @@
 	width: 100%;
 	justify-content: center;
 }
-.social-icon{
-	padding:0 1rem;
-	display: block;
-	width: 3rem;
-	background-color: white;
-	color: violet;
-	border-radius: 50%;
-	height: 3rem;
-	display: flex;
-	align-self: center;
+
+.home-social-icons {
+  position: relative ;
+  display: inline-block ;
+  width: 40px ;
+  font-size: 1.2em ;
+  line-height: 2em ;
+  background: rgba(255, 255, 255, 0.972) ;
+  border-radius: 50% ;
+  transition: 0.5s ;
+  color: #700c86;
 }
 
+.home-social-icons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #68187a;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+
+.home-social-icons:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #801f95;
+}
+
+.home-social-icons:hover {
+  box-shadow: 0 0 5px #87209e;
+  color:#87209e !important;
+  text-shadow: 0 0 2px #87209e;
+}
+
+.social-icon {
+  display: inline-block ;
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
 

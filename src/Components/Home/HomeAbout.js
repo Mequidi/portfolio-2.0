@@ -1,5 +1,9 @@
 import classes from "./Home.module.css"
 import avatarImg from "../../Assets/Home/avatar.svg"
+import { AiFillGithub } from 'react-icons/ai'
+import { FaLinkedinIn } from 'react-icons/fa'
+import { AiFillInstagram } from 'react-icons/ai'
+import { AiOutlineTwitter } from 'react-icons/ai'
 
 const HomeAbout = () =>{
     return <div className={classes.about}>
@@ -45,10 +49,26 @@ const HomeAbout = () =>{
                         <h1>FIND ME ON</h1>
                         <p> Feel free to <span className={classes["purple"]}>connect </span>with me</p>
                         <ul className={classes["social-links"]}>
-                            <li className={classes["social-icon"]}>F</li>
-                            <li className={classes["social-icon"]}>T</li>
-                            <li className={classes["social-icon"]}>G</li>
-                            <li className={classes["social-icon"]}>I</li>
+                            <li className={classes["social-icon"]}>
+                                <a className={classes["home-social-icons"]}>
+                                    <AiFillGithub />
+                                </a>
+                            </li>
+                            <li className={classes["social-icon"]}>
+                                <a className={classes["home-social-icons"]}>
+                                    <AiOutlineTwitter />
+                                </a>
+                            </li>
+                            <li className={classes["social-icon"]}>
+                                <a className={classes["home-social-icons"]}>
+                                    <FaLinkedinIn />
+                                </a>
+                            </li>
+                            <li className={classes["social-icon"]}>
+                                <a className={classes["home-social-icons"]}>
+                                    <AiFillInstagram />
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
