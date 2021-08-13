@@ -22,6 +22,10 @@ function App() {
 	},[])
 
 	const home = useRef(null);
+	const about = useRef(null);
+	// const projects = useRef(null);
+	// const resume = useRef(null);
+
 	
 	function clickScrollHandler(ref) {
 		ref.current.scrollIntoView({ behavior: 'smooth' })
@@ -33,11 +37,16 @@ function App() {
 		<Background />
 		<Navbar 
 			home={home}
+			about={about}
+			// projects={projects}
+			// reusme={resume}
 			onClickScroll = {clickScrollHandler}
 		/>
 			<main>
 				<Home ref={home}/>
-				<About id="about" />
+				<About ref={about} />
+				{/* <Projects ref={projects} />
+				<Resume ref={resume} /> */}
 			</main>
 		<Footer />
   	</Fragment>

@@ -32,11 +32,11 @@ const Navbar = (props) =>{
                             <AiOutlineHome/>
                             <span>Home</span>
                     </li>
-                    <li className={classes["list-item"]}>
-                        <a href="#about">
+                    <li className={classes["list-item"]} onClick={()=>{
+                        props.onClickScroll(props.about)
+                    }}>
                             <IoIosPerson/>
-                            <span>About</span>
-                        </a>    
+                            <span>About</span>   
                     </li>
                     <li className={classes["list-item"]}>
                         <a href="#projects">
