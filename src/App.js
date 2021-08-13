@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Fragment, useEffect, useState,useRef } from 'react';
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
+import About from './Components/About/About';
 import Home from './Components/Home/Home';
 import Background from './Components/Layout/Background';
 import Footer from './Components/Layout/Footer';
@@ -20,18 +21,26 @@ function App() {
 		return ()=>clearTimeout(timer);
 	},[])
 
-  	return <Router>
+	const home = useRef(null);
+	
+	function clickScrollHandler(ref) {
+		ref.current.scrollIntoView({ behavior: 'smooth' })
+		// console.log(ref.current)
+	}
+
+  	return <Fragment>
 		<Preloader load={load}></Preloader>
 		<Background />
-		<Navbar />
-		<Switch>
-			<Route path="/" exact component={Home} />
-			{/* <Route path="/project" component={Projects} />
-			<Route path="/about" component={About} />
-			<Route path="/resume" component={Resume} /> */}
-		</Switch>
+		<Navbar 
+			home={home}
+			onClickScroll = {clickScrollHandler}
+		/>
+			<main>
+				<Home ref={home}/>
+				<About id="about" />
+			</main>
 		<Footer />
-  	</Router>
+  	</Fragment>
 }
 
 export default App;

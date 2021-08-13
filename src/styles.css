@@ -8,6 +8,7 @@ html {
             rgba(12, 10, 22, 0.863));
     --imp-text-color: #c770f0;
     /* overflow-x: hidden; */
+    scroll-behavior: smooth;
 }
 
 *,

@@ -3,8 +3,9 @@ import introImg from "../../Assets/Home/lightpurple-undraw_feeling_proud_qne1.sv
 import Type from "./Type";
 import { useEffect,useState } from "react";
 import HomeAbout from "./HomeAbout";
+import React from "react";
 
-const Home = () =>{
+const Home = React.forwardRef((props,ref) =>{
 
     const [ startType,setStartType ]=useState(false);
 
@@ -14,7 +15,7 @@ const Home = () =>{
         },3000)
     },[])
 
-    return <section>
+    return <section ref={ref}>
                 <div className={classes.home}>
                     <div className={classes["home-container"]}>
                         <div className={classes["home-content"]}>
@@ -34,6 +35,6 @@ const Home = () =>{
                 </div>
                 <HomeAbout />
             </section>
-}
+})
 
 export default Home;

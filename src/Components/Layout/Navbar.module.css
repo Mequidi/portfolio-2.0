@@ -59,9 +59,15 @@
     margin: 0 2rem;
     cursor: pointer;
     letter-spacing: 1px;
+    white-space: nowrap;
+}
+.list-item a{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
 }
 
 .list-item:after{
@@ -69,7 +75,8 @@
     position: absolute;
     height: 5px;
     background-color: #c770f0;
-    top:2.7rem;
+    top:2.5rem;
+    left:1rem;
     border-radius: 15rem;
     width: 0;
     transition: all 0.3s ease-in-out;
@@ -77,11 +84,9 @@
 }
 .list-item:hover::after{
     transform-origin: bottom left;
-    width: 80%;
+    width: 76%;
 }
 
-.list-item p{
-    display: flex;
-    align-self: flex-start;
+.list-item span{
     margin-left: 4px;
 }
