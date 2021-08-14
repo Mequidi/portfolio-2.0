@@ -3,7 +3,7 @@ import { ImPointRight } from "react-icons/im";
 
 const AboutContentText = () =>{
     return <div className={classes["text-container"]}>
-                <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+                <h1>
                 Know Who <strong className="purple">I'M</strong>
                 </h1>
                 <div className={classes["card-text"]}>

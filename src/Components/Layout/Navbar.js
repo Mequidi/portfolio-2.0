@@ -29,26 +29,22 @@ const Navbar = (props) =>{
                     <li className={classes["list-item"]} onClick={()=>{
                         props.onClickScroll(props.home)
                     }}>
-                            <AiOutlineHome/>
-                            <span>Home</span>
+                        <AiOutlineHome/>
+                        <span>Home</span>
                     </li>
                     <li className={classes["list-item"]} onClick={()=>{
                         props.onClickScroll(props.about)
                     }}>
-                            <IoIosPerson/>
-                            <span>About</span>   
+                        <IoIosPerson/>
+                        <span>About</span>   
                     </li>
                     <li className={classes["list-item"]}>
-                        <a href="#projects">
-                            <AiOutlineFundProjectionScreen/>
-                            <span>Projects</span>
-                        </a>
+                        <AiOutlineFundProjectionScreen/>
+                        <span>Projects</span>
                     </li>
                     <li className={classes["list-item"]}>
-                        <a href="#resume">
-                            <CgFileDocument/>
-                            <span>Resume</span>
-                        </a>   
+                        <CgFileDocument/>
+                        <span>Resume</span>
                     </li>
                 </ul>
             </div>

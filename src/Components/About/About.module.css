@@ -1,53 +1,121 @@
-.about-container{
-    padding: 6rem 1rem 2rem 1rem;
+
+.about-section{
+    width: 90%;
+    margin: auto;
+}
+.about-container {
+    padding: 3rem 1rem 1rem 1rem;
     width: 100%;
     margin: auto;
 }
-.about-container>*{
-    width: 90%;
-    margin:auto;
+
+.about-container>* {
+    width: 100%;
+    margin: auto;
 }
-.about-content{
+
+.about-content {
     padding: 10px;
-    display: flex;  
+    display: flex;
 }
-.about-content >*{
+
+.about-content>* {
     padding: 2rem 1rem;
 }
-.text-container{
+
+.text-container {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.text-container h1{
-    font-size: 2.2rem;
-    /* text-align: center; */
+
+.text-container h1 {
+    font-size: 3rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     width: 100%;
     text-align: center;
 }
-.text-container div{
+
+.text-container div {
     width: 100%;
     padding: 1.5rem;
     font-size: 20px;
 }
-.card-text{
-    padding:1rem;
+
+.card-text {
+    padding: 1rem;
 }
-.card-text p{
+
+.card-text p {
     margin-bottom: 1rem;
 }
-.hobby-list{
+
+.hobby-list {
     padding-left: 2rem;
     margin-bottom: 1rem;
     list-style: none;
 }
-.image-container{
+
+.image-container {
     flex-basis: 40%;
-    padding:8rem 1rem 1rem 1rem ;
+    padding: 8rem 1rem 1rem 1rem;
 }
-.image-container img{
+
+.image-container img {
     width: 100%;
+}
+
+.project-heading {
+    font-size: 2.3em;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.tech-icons-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 3rem;
+}
+
+.tech-icons {
+
+    font-size: 4.5rem;
+    margin: 15px;
+    padding: 30px 25px;
+    opacity: 0.93;
+    border: 1.7px solid rgba(200, 137, 230, 0.637);
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 5px;
+    display: table;
+    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
+    overflow: hidden;
+    transition: all 0.4s ease 0s;
+
+}
+
+.tech-icons:hover {
+    transform: scale(1.05);
+    overflow: hidden;
+    border: 2.2px solid rgba(197, 115, 230, 0.883);
+}
+
+.tools-list{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.github{
+    padding-bottom: 3rem;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
