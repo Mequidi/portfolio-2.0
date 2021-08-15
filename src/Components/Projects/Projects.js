@@ -28,13 +28,13 @@ const Projects = React.forwardRef((props,ref) => {
                             <h2>{project.title}</h2>
                             <p>{project.text}</p>
                             <button className={classes["link-btn"]}>
-                                <a href={project.linkProject} className={classes["link"]} target="_blank">
+                                <a href={project.linkProject} className={classes["link"]} target="_blank" rel="noreferrer">
                                     <BiLinkExternal />
                                     <span>View Project</span>
                                 </a>
                             </button>
                             <button className={classes["link-btn"]}>
-                            <a href={project.linkCode} className={classes["link"]} target="_blank">
+                            <a href={project.linkCode} className={classes["link"]} target="_blank" rel="noreferrer">
                                 <BiLinkExternal />
                                 <span>Source Code</span>
                             </a>

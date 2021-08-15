@@ -16,6 +16,7 @@ import {
     SiVisualstudiocode,
     SiPostman, 
   } from "react-icons/si";
+import { FiFigma } from "react-icons/fi"
 import Github from "./Github"; 
 
 const About = React.forwardRef((props,ref) => {
@@ -47,6 +48,7 @@ const About = React.forwardRef((props,ref) => {
         <div className={classes["tools-list"]}>
             <div className={classes["tech-icons"]}><SiVisualstudiocode /></div>
             <div className={classes["tech-icons"]}><SiPostman /></div>
+            <div className={classes["tech-icons"]}><FiFigma /></div>
         </div>
         <Github></Github>
     </section>
