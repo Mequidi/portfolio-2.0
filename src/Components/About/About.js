@@ -16,7 +16,7 @@ import {
     SiVisualstudiocode,
     SiPostman, 
   } from "react-icons/si";
-import Github from "./Github";
+import Github from "./Github"; 
 
 const About = React.forwardRef((props,ref) => {
     return <section ref={ref} className={classes["about-section"]}>

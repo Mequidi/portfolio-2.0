@@ -36,9 +36,11 @@ const Navbar = (props) =>{
                         props.onClickScroll(props.about)
                     }}>
                         <IoIosPerson/>
-                        <span>About</span>   
+                        <span>About</span>    
                     </li>
-                    <li className={classes["list-item"]}>
+                    <li className={classes["list-item"]} onClick={()=>{
+                        props.onClickScroll(props.projects)
+                    }}>
                         <AiOutlineFundProjectionScreen/>
                         <span>Projects</span>
                     </li>
