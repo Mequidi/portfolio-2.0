@@ -73,9 +73,14 @@ function App() {
 	const projects = useRef(null);
 	const resume = useRef(null);
 	
-	function clickScrollHandler(ref) {
-		ref.current.scrollIntoView({ behavior: 'smooth' })
+	
+	function clickScrollHandler(ref,navHeight) {
+		const elementOffsetTop=ref.current.offsetTop;
+		window.scrollTo({left:0,top:`${elementOffsetTop-navHeight}`})
+		
 	}
+
+
 
   	return <Fragment>
 		<Preloader load={load}></Preloader>
