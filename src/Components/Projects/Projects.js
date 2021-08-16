@@ -22,7 +22,7 @@ const Projects = React.forwardRef((props,ref) => {
             <div className={classes["projects-list"]}>
                 
                 {props.projects.map((project,index)=>{
-                    return <div className={classes.project}>
+                    return <div key={project.id} className={classes.project}>
                         <img src={imgArr[index]} alt={project.title} />
                         <div className={classes["project-content"]}>
                             <h2>{project.title}</h2>

@@ -44,7 +44,9 @@ const Navbar = (props) =>{
                         <AiOutlineFundProjectionScreen/>
                         <span>Projects</span>
                     </li>
-                    <li className={classes["list-item"]}>
+                    <li className={classes["list-item"]} onClick={()=>{
+                        props.onClickScroll(props.resume)
+                    }}>
                         <CgFileDocument/>
                         <span>Resume</span>
                     </li>
