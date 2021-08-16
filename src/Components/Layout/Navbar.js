@@ -15,7 +15,7 @@ const Navbar = (props) =>{
     const navbarHeight = useRef();
 
     document.addEventListener("scroll",()=>{
-        if(window.pageYOffset>80)
+        if(window.pageYOffset>navHeight)
             setHasScrolled(true);
         else
             setHasScrolled(false);
