@@ -1,6 +1,6 @@
 import classes from "./Resume.module.css";
 import ResumeItem from "./ResumeItem";
-import pdf from "../../Assets/Nikhil's Resume (3).pdf";
+import pdf from "../../Assets/Nikhil's-Resume.pdf";
 import React from "react";
 import { AiOutlineDownload } from "react-icons/ai"
 
@@ -8,9 +8,11 @@ const Resume = React.forwardRef((props,ref) =>{
     return <section ref={ref} className={classes["resume-section"]}>
         <div className={classes["resume-container"]}>
             <div className={classes["download-resume"]}>
-                <button variant="primary" href={pdf} target="_blank">
-                    <AiOutlineDownload />
-                    &nbsp;Download CV
+                <button>
+                    <a href={pdf} target="_blank" rel="noreferrer" style={{color:"white",textDecoration:"none"}}>
+                        <AiOutlineDownload />
+                        &nbsp;Download CV
+                    </a>
                 </button>
             </div>
             <div className={classes["resume"]}>
@@ -49,9 +51,11 @@ const Resume = React.forwardRef((props,ref) =>{
                 </div>
             </div>
             <div className={classes["download-resume"]}>
-                <button variant="primary" href={pdf} target="_blank">
-                    <AiOutlineDownload />
-                    &nbsp;Download CV
+                <button>
+                    <a href={pdf} target="_blank" rel="noreferrer" style={{color:"white",textDecoration:"none"}}>
+                        <AiOutlineDownload />
+                        &nbsp;Download CV
+                    </a>
                 </button>
             </div>
         </div>
