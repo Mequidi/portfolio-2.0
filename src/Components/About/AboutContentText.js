@@ -10,7 +10,7 @@ const AboutContentText = () =>{
                     <p style={{ textAlign: "justify" }}>
                         Hi Everyone, I am <span className="purple">Nikhil Sejwal </span>
                         from <span className="purple"> New Delhi, India.</span>
-                        <br />"Personal Shit lorem20"#
+                        <br />I have completed my Graduation in Computer Science from Delhi University and looking for work.
                         <br />
                         <br />
                         Apart from coding, some other activities that I love to do!

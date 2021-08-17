@@ -1,5 +1,5 @@
 import classes from "./Home.module.css";
-import introImg from "../../Assets/Home/lightpurple-undraw_feeling_proud_qne1.svg"
+import introImg from "../../Assets/Home/laptopondesk.svg"
 import Type from "./Type";
 import { useEffect,useState } from "react";
 import HomeAbout from "./HomeAbout";

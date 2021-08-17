@@ -13,11 +13,16 @@
     margin-bottom: 2rem;
 }
 .projects-list{
-    display: grid;
-    grid-template-columns: 550px 550px;
-    column-gap: 2rem;
-    row-gap: 2rem;
+    display: flex;
     padding: 50px 25px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.projects-list>*{
+    flex-basis: 525px;
+    margin: 1rem;
+    flex-shrink: 1;
 }
 .project{
     /* box-shadow: 0px 3px 3px 3px rgba(119, 53, 136, 0.459); */
