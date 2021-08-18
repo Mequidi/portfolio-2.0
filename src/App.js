@@ -79,9 +79,6 @@ function App() {
 		window.scrollTo({left:0,top:`${elementOffsetTop-navHeight}`})
 		
 	}
-
-
-
   	return <Fragment>
 		<Preloader load={load}></Preloader>
 		<Background />
