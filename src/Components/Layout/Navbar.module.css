@@ -88,3 +88,7 @@
 .list-item span{
     margin-left: 4px;
 }
+
+@media(max-width:768px){
+    
+}
