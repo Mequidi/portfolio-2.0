@@ -15,7 +15,7 @@ const Navbar = (props) =>{
     const [ navHeight,setNavHeight ] = useState(0)
     const [ isToggleActive,setIsToggleActive ] = useState(false);
     const navbarHeight = useRef();
-
+    const ulRef = useRef();
     document.addEventListener("scroll",()=>{
         if(window.pageYOffset>navHeight)
             setHasScrolled(true);
@@ -23,13 +23,19 @@ const Navbar = (props) =>{
             setHasScrolled(false);
     });
     
-    useEffect(()=>{
-        setNavHeight(navbarHeight.current.clientHeight)
-    },[])
-
     const clickHandler = () =>{
         setIsToggleActive(()=>!isToggleActive);
     }
+    
+    useEffect(()=>{
+        setNavHeight(()=>navbarHeight.current.clientHeight);
+    },[]) 
+
+    function navbarCloser()
+    {
+        setIsToggleActive(false);
+    }
+
     
     return <nav ref={navbarHeight} className={hasScrolled?`${classes.navbar} ${classes["color-navbar"]}`:classes.navbar}>
                 <div className={classes["nav-container"]}>
@@ -39,28 +45,33 @@ const Navbar = (props) =>{
                             < FaBars />
                         </button>
                     </div>
-                    <div className={classes["list-container"]}>
-                        <ul className={isToggleActive?`${classes.list} ${classes["toggle-list"]}`:classes.list}>
+                    <div className={classes["list-container"]} style={isToggleActive?{ height:"230px" }:null}>
+                        <ul ref={ulRef} className={isToggleActive?`${classes["toggle-list"]} ${classes.list}`:classes.list}
+                        >
                             <li className={classes["list-item"]} onClick={()=>{
                                 props.onClickScroll(props.home,navHeight)
+                                navbarCloser()
                             }}>
                                 <AiOutlineHome/>
                                 <span>Home</span>
                             </li>
                             <li className={classes["list-item"]} onClick={()=>{
                                 props.onClickScroll(props.about,navHeight)
+                                navbarCloser()
                             }}>
                                 <IoIosPerson/>
                                 <span>About</span>    
                             </li>
-                            <li className={classes["list-item"]} onClick={()=>{
+                            <li  className={classes["list-item"]} onClick={()=>{
                                 props.onClickScroll(props.projects,navHeight)
+                                navbarCloser()
                             }}>
                                 <AiOutlineFundProjectionScreen/>
                                 <span>Projects</span>
                             </li>
-                            <li className={classes["list-item"]} onClick={()=>{
+                            <li  className={classes["list-item"]} onClick={()=>{
                                 props.onClickScroll(props.resume,navHeight)
+                                navbarCloser()
                             }}>
                                 <CgFileDocument/>
                                 <span>Resume</span>

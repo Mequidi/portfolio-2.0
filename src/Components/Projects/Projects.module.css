@@ -80,3 +80,15 @@
     margin: 0 0.4rem;
 }
 
+@media(max-width:640px){
+    .link-btn{
+        margin-bottom: 1rem;
+    }
+    .projects-list{
+        padding: 0.5rem;
+    }
+    .section-container{
+        margin: 0.5rem auto;
+    }
+
+}

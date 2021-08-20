@@ -29,3 +29,14 @@
 .social-icons:hover{
     transform: scale(1.2);
 }
+
+@media(max-width:630px)
+{
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-container>*{
+        padding: 1rem;
+        border-bottom: 2px #c770f0 solid;
+    }
+}

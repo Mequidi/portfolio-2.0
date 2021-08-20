@@ -10,7 +10,7 @@
     padding-bottom: 50px;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .resume-left { 
@@ -100,4 +100,13 @@
 }
 .download-resume button:hover{
     background-color: #6001db;
+}
+@media(max-width:768px){
+    .resume{
+        flex-direction: column;
+    }
+    .resume>*{
+        padding: 3rem;
+        margin: 0;
+    }
 }
