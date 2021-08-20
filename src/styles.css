@@ -12,6 +12,8 @@ html {
      */
     scroll-behavior: smooth;
     color: #fff;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 *,
