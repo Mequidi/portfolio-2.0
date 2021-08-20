@@ -105,10 +105,13 @@
 }
 
 .tools-list{
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
+    display: flex;
     justify-content: center;
     padding-bottom: 3rem;
+}
+.tools-list>*{
+    flex-basis: 300px;
+    flex-shrink: 1;
 }
 
 .github{

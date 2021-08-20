@@ -8,20 +8,20 @@
 .resume {
     padding-top: 10px;
     padding-bottom: 50px;
-    display: grid;
-    grid-template-columns: 550px 550px;
-    column-gap: 10rem;
+    display: flex;
     justify-content: center;
     align-items: start;
 }
 
-.resume-left {
-    padding-left: 80px;
+.resume-left { 
+    padding-left: 5vw;
+    flex-basis: 50%;
 }
 
 .resume-right {
-
-    padding-right: 80px;
+    margin-left: 5rem;
+    flex-basis: 50%;
+    padding-right: 5vw;
 }
 
 .resume .resume-title {

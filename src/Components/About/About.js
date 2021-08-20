@@ -44,7 +44,7 @@ const About = React.forwardRef((props,ref) => {
         </div>
         <h1 className={classes["project-heading"]}>
           <strong className="purple">Tools</strong> I use
-        </h1>
+        </h1> 
         <div className={classes["tools-list"]}>
             <div className={classes["tech-icons"]}><SiVisualstudiocode /></div>
             <div className={classes["tech-icons"]}><SiPostman /></div>

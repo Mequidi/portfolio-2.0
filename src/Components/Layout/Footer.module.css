@@ -12,7 +12,8 @@
     text-align: center;
 }
 .footer-container>*{
-    flex-basis: 455px;
+    /* flex-basis: 455px; */
+    flex-grow: 1;
     padding: 0 2rem;
 }
 .footer-icons{

@@ -8,7 +8,8 @@ html {
             rgba(12, 10, 22, 0.863));
     --imp-text-color: #c770f0;
     --imp-text-color1: #d1c0df;
-    /* overflow-x: hidden; */
+    /* overflow-x: hidden;
+     */
     scroll-behavior: smooth;
     color: #fff;
 }
@@ -186,4 +187,11 @@ html {
     margin-bottom: 1rem;
     width: 100%;
     text-align: center;
+}
+
+@media(max-width:1024px){
+}
+@media(max-width:768px){
+}
+@media(max-width:476px){
 }

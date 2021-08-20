@@ -13,6 +13,7 @@ const Navbar = (props) =>{
 
     const [ hasScrolled,setHasScrolled ] = useState(false);
     const [ navHeight,setNavHeight ] = useState(0)
+    const [ isToggleActive,setIsToggleActive ] = useState(false);
     const navbarHeight = useRef();
 
     document.addEventListener("scroll",()=>{
@@ -25,15 +26,21 @@ const Navbar = (props) =>{
     useEffect(()=>{
         setNavHeight(navbarHeight.current.clientHeight)
     },[])
+
+    const clickHandler = () =>{
+        setIsToggleActive(()=>!isToggleActive);
+    }
     
     return <nav ref={navbarHeight} className={hasScrolled?`${classes.navbar} ${classes["color-navbar"]}`:classes.navbar}>
                 <div className={classes["nav-container"]}>
                     <div className={classes["logo-container"]}>
                         <img className={classes.logoimg} src={logoImg} alt="logo"/>
+                        <button className={classes["togglebtn"]} onClick={clickHandler}>
+                            < FaBars />
+                        </button>
                     </div>
-                    <button className={classes.togglebtn}><FaBars /></button>
                     <div className={classes["list-container"]}>
-                        <ul className={classes.list}>
+                        <ul className={isToggleActive?`${classes.list} ${classes["toggle-list"]}`:classes.list}>
                             <li className={classes["list-item"]} onClick={()=>{
                                 props.onClickScroll(props.home,navHeight)
                             }}>
