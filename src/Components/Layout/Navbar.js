@@ -5,9 +5,8 @@ import { IoIosPerson } from 'react-icons/io'
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai'
 import { CgFileDocument } from 'react-icons/cg'
 import { FaBars } from 'react-icons/fa'
-import { useState } from "react";
+import { useEffect,useRef,useState } from "react";
 import React from "react";
-import { useEffect, useRef } from "react/cjs/react.development";
 
 const Navbar = (props) =>{
 
@@ -36,7 +35,6 @@ const Navbar = (props) =>{
         setIsToggleActive(false);
     }
 
-    
     return <nav ref={navbarHeight} className={hasScrolled?`${classes.navbar} ${classes["color-navbar"]}`:classes.navbar}>
                 <div className={classes["nav-container"]}>
                     <div className={classes["logo-container"]}>
