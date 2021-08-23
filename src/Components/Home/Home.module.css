@@ -58,6 +58,7 @@
 	width: 90%;
 	padding: 1.5rem;
 	margin: auto;
+	justify-content: space-between;
 }
 
 .about-container>* {

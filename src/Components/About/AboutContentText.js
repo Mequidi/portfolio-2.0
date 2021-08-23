@@ -1,5 +1,5 @@
 import classes from "./About.module.css"
-import { ImPointRight } from "react-icons/im";
+import { BsArrowRight } from "react-icons/bs";
 
 const AboutContentText = () =>{
     return <div className={classes["text-container"]}>
@@ -17,13 +17,13 @@ const AboutContentText = () =>{
                     </p>
                     <ul className={classes["hobby-list"]}>
                         <li>
-                        <ImPointRight /> Playing Games
+                        < BsArrowRight /> Playing Games
                         </li>
                         <li>
-                        <ImPointRight /> Listening To Music
+                        < BsArrowRight /> Listening To Music
                         </li>
                         <li>
-                        <ImPointRight /> Travelling
+                        < BsArrowRight /> Travelling
                         </li>
                     </ul>
 

@@ -75,4 +75,4 @@ const HomeAbout = () =>{
             </div>
 }
 
-export default HomeAbout;
+export default HomeAbout; 

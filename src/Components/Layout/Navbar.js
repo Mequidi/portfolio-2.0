@@ -5,7 +5,7 @@ import { IoIosPerson } from 'react-icons/io'
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai'
 import { CgFileDocument } from 'react-icons/cg'
 import { FaBars } from 'react-icons/fa'
-import { useEffect,useRef,useState } from "react";
+import { useEffect , useRef , useState } from "react";
 import React from "react";
 
 const Navbar = (props) =>{
