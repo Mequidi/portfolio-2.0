@@ -1,5 +1,5 @@
 import classes from "./Navbar.module.css";
-import logoImg from "../../Assets/Logo/lightpurplerinnegan.png"
+// import logoImg from "../../Assets/Logo/lightpurplerinnegan.png"
 import { AiOutlineHome } from 'react-icons/ai'
 import { IoIosPerson } from 'react-icons/io'
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai'
@@ -38,7 +38,7 @@ const Navbar = (props) =>{
     return <nav ref={navbarHeight} className={hasScrolled?`${classes.navbar} ${classes["color-navbar"]}`:classes.navbar}>
                 <div className={classes["nav-container"]}>
                     <div className={classes["logo-container"]}>
-                        <img className={classes.logoimg} src={logoImg} alt="logo"/>
+                        {/* <img className={classes.logoimg} src={logoImg} alt="logo"/> */}
                         <button className={classes["togglebtn"]} onClick={clickHandler}>
                             < FaBars />
                         </button>
